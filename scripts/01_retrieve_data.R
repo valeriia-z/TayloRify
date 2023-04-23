@@ -33,10 +33,6 @@ access_token <- get_spotify_access_token(client_id, client_secret)
 #using spoitfyr
 taylor <- get_artist_audio_features('taylor swift')
 
-taylor <- taylor %>% filter(album_name == "Taylor Swift" | album_name == "Fearless Platinum Edition" | 
-                              album_name == "Speak Now" | album_name == "Red" |
-                              album_name == "1989" | album_name == "reputation") 
-# The Spotify data for Taylor Swift changed a little in the week between my pulling it and posting this code.
 
 
 
