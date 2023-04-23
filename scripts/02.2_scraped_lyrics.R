@@ -38,3 +38,22 @@ for (url in taylor_lyrics$filtered_track_lyric_urls) {
     break
   }
 }
+
+# Cleaning and standardizing lyrics
+for (i in seq_along(lyrics_list)) {
+  lyrics_list[i] <- gsub("([a-z])([A-Z])", "\\1 \\2", lyrics_list[i])
+  lyrics_list[i] <- gsub("\n", " ", lyrics_list[i])
+  lyrics_list[i] <- gsub("\\[.*?\\]", " ", lyrics_list[i])
+  lyrics_list[i] <- tolower(lyrics_list[i])
+  lyrics_list[i] <- gsub("[ [:punct:] ]", " ", lyrics_list[i])
+  lyrics_list[i] <- gsub(" {2,}", " ", lyrics_list[i])
+}
+
+# Convert lyrics_list into df
+lyrics_list <- data.frame(lyrics = unlist(lyrics_list), stringsAsFactors = FALSE)
+
+# Create df with titles and lyrics
+genius_data <- data.frame(track_name = taylor_lyrics$filtered_track_lyric_titles, lyrics = lyrics_list)
+genius_data$track_name <- as.character(genius_data$track_name)
+genius_data$lyrics <- as.character(genius_data$lyrics_list)
+
