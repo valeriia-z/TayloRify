@@ -12,7 +12,7 @@ studio_albums <- c("Red (Deluxe Edition)", "Lover", "Midnights (3am Edition)", "
 spotify_genius <- spotify_genius %>%
   filter(album_name %in% studio_albums)
 
-spotify_genius <- spotify_genius[!duplicated(spotify_genius1$track_name), ]
+spotify_genius <- spotify_genius[!duplicated(spotify_genius$track_name), ]
 
 
 
