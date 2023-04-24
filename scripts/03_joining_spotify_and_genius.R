@@ -14,7 +14,8 @@ spotify_genius <- spotify_genius %>%
 
 spotify_genius <- spotify_genius[!duplicated(spotify_genius$track_name), ]
 
-
+# Write the dataframe to a CSV file
+write_csv(spotify_genius, "./data/spotify_genius.csv")
 
 
 

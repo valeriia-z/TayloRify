@@ -28,7 +28,7 @@ Sys.setenv(SPOTIFY_CLIENT_SECRET = client_secret)
 # Generate an access token
 access_token <- get_spotify_access_token(client_id, client_secret)
 
-#using spoitfyr
+#using spotifyr
 taylor <- get_artist_audio_features('taylor swift')
 
 

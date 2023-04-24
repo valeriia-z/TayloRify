@@ -57,3 +57,5 @@ genius_data <- data.frame(track_name = taylor_lyrics$filtered_track_lyric_titles
 genius_data$track_name <- as.character(genius_data$track_name)
 genius_data$lyrics <- as.character(genius_data$lyrics_list)
 
+# Save the data
+write.csv(genius_data, "./data/genius_data.csv", row.names=TRUE)
