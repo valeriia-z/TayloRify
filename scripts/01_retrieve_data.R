@@ -1,7 +1,5 @@
 # install required packages
-install.packages(c("spotifyr", "plyr", "tidyverse", "httr", "rvest", "stringr", 
-                   "ggthemes", "tidytext", "wordcloud", "ggridges", "wesanderson", 
-                   "yarrr", "knitr", "kableExtra", "radarchart"))
+# install.packages(c("spotifyr", "plyr", "tidyverse", "httr", "rvest", "stringr", "ggthemes", "tidytext", "wordcloud", "ggridges", "wesanderson", "yarrr", "knitr", "kableExtra", "radarchart"))
 
 # load required packages
 library(spotifyr)
