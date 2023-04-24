@@ -29,7 +29,7 @@ for (url in taylor_lyrics$filtered_track_lyric_urls) {
       # Print a message and wait for a short time before trying again
       cat(paste("Error for URL:", url, "\n"))
       retries <- retries + 1
-      Sys.sleep(5)
+      Sys.sleep(2)
       next
     }
     
