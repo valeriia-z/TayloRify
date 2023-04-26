@@ -88,16 +88,18 @@ knitr::include_graphics("../figs/top_words_total.png")
 
 Personally, as a fan of Taylor Swift, I appreciate the way she explores the topic of love in her music. Her ability to articulate complex emotions and experiences related to love has resonated with me and many others. It's no wonder that her music has become the soundtrack to many people's love lives. </font>
 
-## Lexical diverse
+## Lexical diversity
 
 ### Albums
 
 <font size = "4"> Lexical diversity means the variety of words used in a text, and it can be measured by the number of different words used in relation to the total number of words. In the context of song lyrics, it refers to how many unique words are used in the lyrics of a particular song. </font>
 
+*A score of 1.0 means the song is very diverse, a score of 0.0 - least diverse. I build a pirate plot to produce an overview of diversity in albums and check on my own assumption which album has the biggest value.*
+
 ```{r, echo=FALSE, out.width='800px', out.height='600px'}
 knitr::include_graphics("../figs/lex_div_albums.png")
 ```
-
+*Dots represent each song in album and lines represent mean value for each album.*
 <font size = "4"> When analyzing the lexical diversity of Taylor Swift's albums, it becomes apparent that there are two significant outliers: "Folklore" and "Evermore." This is not surprising, as these two albums are widely regarded as *masterpieces* in terms of storytelling and songwriting.
 
 Throughout her career, Taylor Swift has grown and evolved as an artist, and these albums represent the culmination of her artistic journey. The lyrics in "Folklore" and "Evermore" showcase a remarkable depth and complexity, with a rich tapestry of words and phrases that capture the listener's imagination.
@@ -120,6 +122,7 @@ I mean, just *look* at the bridge for "Champagne problems": </font>
 ```{r, echo=FALSE, out.width='600px', out.height='800px'}
 knitr::include_graphics("https://i.pinimg.com/originals/da/ab/c8/daabc854029cdf8ba4e3f57257cc8ade.jpg")
 ```
+
 <font size = "4"> Outstanding! </font>
 
 ## Bing analysis
@@ -134,6 +137,7 @@ Using this approach, I was able to generate sentiment scores for each song on th
 knitr::include_graphics("../figs/midnights_sent_bing.png")
 ```
 
+<font size = "2"> *On the left:all songs from "Midnights" album. Pink colour shows negative score, green colour shows positive score* </font>
 <font size = "4"> Analyzing the sentiment of song lyrics can be challenging due to the use of metaphors and the influence of musical production on the overall emotional tone. In my analysis of Taylor Swift's "Midnight" album, I employed the Bing lexicon to generate sentiment scores for each song. While these scores provide a rough approximation of the emotional content of the lyrics, they do not capture the full complexity of Swift's use of language and the impact of musical production on the listener's emotional response.
 
 Nonetheless, sentiment analysis can still be a valuable tool for understanding the emotional content of text. When combined with close reading and musical analysis, sentiment analysis can provide insights into the ways in which language and music work together to create meaning and evoke emotions in listeners. In the case of Taylor Swift's music, her clever use of language and her ability to combine positive and negative sentiments in unexpected ways contribute to the emotional depth and complexity of her songs.</font>
