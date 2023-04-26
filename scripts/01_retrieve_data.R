@@ -1,5 +1,5 @@
 # install required packages
-# install.packages(c("spotifyr", "plyr", "tidyverse", "httr", "rvest", "stringr", "ggthemes", "tidytext", "wordcloud", "ggridges", "wesanderson", "yarrr", "knitr", "kableExtra", "radarchart"))
+# install.packages(c("spotifyr", "plyr", "tidyverse", "httr", "rvest", "stringr", "ggthemes", "tidytext", "wordcloud", "ggridges", "wesanderson", "yarrr", "knitr", "kableExtra", "radarchart", "prettydoc"))
 
 # load required packages
 library(spotifyr)
@@ -17,6 +17,7 @@ library(yarrr)
 library(knitr)
 library(kableExtra)
 library(radarchart)
+library(prettydoc)
 
 # set your Spotify API credentials (need to provide your Client ID and Client Secret)
 client_id <- "40e05819d37d49b7a73804c728f1773c" # change to your own crenedtials

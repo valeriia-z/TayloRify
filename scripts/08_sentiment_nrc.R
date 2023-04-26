@@ -1,3 +1,8 @@
+# joining the tokenized, tidied lyric dataset with sentiment lexicons
+taylor_nrc_sub <- tidier_taylor %>%
+  inner_join(get_sentiments("nrc")) %>%
+  filter(!sentiment %in% c("positive", "negative"))
+
 # all-album radar chart
 sentiment_nrc <- taylor_nrc_sub %>%
   group_by(album_name, sentiment) %>%
@@ -16,6 +21,6 @@ radar_chart <- sentiment_nrc %>%
 
 radar_chart <- radar_chart[c(2,7,5,8,4,3,1,6), c(1, 7:2)]
 
-chartJSRadar(radar_chart, polyAlpha = 0.1, lineAlpha = 0.8, maxScale = 25,
-             colMatrix = matrix(c(0, 255, 255, 255, 185, 15, 139, 0, 139, 
-                                  255, 0, 0, 201, 167, 198, 0, 0, 0), byrow = F, nrow = 3))
+chartJSRadar(radar_chart, polyAlpha = 0.05, lineAlpha = 0.8, maxScale = 25, width = 1000, height = 1000)
+
+
