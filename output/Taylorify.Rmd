@@ -60,7 +60,10 @@ head(spotify_genius)
 <font size = "4"> The Lover album stands out for having the highest mean valence among Taylor Swift's albums. This is especially interesting considering her previous album, Reputation, had the lowest overall score. The contrast between these two albums may be due to the personal changes in Taylor's life that influenced her music during these periods. The Lover album is characterized by a more positive and romantic tone, while Reputation reflects a darker and more cynical outlook. This demonstrates Taylor's ability to adapt her music to reflect her personal experiences and emotions. </font>
 
 ### Tracks
-![](../figs/top_10_songs_valence.png)
+
+```{r, echo=FALSE, out.width='1000px', out.height='800px'}
+knitr::include_graphics("../figs/top_10_songs_valence.png")
+```
 
 <font size = "4"> Well, well, well, look who's got the biggest valence overall! It's none other than infectious hit "Shake It Off." Who can resist dancing to that catchy tune? It's been played on every radio station and dance floor across the world!
 
