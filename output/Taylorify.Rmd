@@ -138,6 +138,7 @@ knitr::include_graphics("../figs/midnights_sent_bing.png")
 ```
 
 <font size = "2"> *On the left:all songs from "Midnights" album. Pink colour shows negative score, green colour shows positive score* </font>
+
 <font size = "4"> Analyzing the sentiment of song lyrics can be challenging due to the use of metaphors and the influence of musical production on the overall emotional tone. In my analysis of Taylor Swift's "Midnight" album, I employed the Bing lexicon to generate sentiment scores for each song. While these scores provide a rough approximation of the emotional content of the lyrics, they do not capture the full complexity of Swift's use of language and the impact of musical production on the listener's emotional response.
 
 Nonetheless, sentiment analysis can still be a valuable tool for understanding the emotional content of text. When combined with close reading and musical analysis, sentiment analysis can provide insights into the ways in which language and music work together to create meaning and evoke emotions in listeners. In the case of Taylor Swift's music, her clever use of language and her ability to combine positive and negative sentiments in unexpected ways contribute to the emotional depth and complexity of her songs.</font>
