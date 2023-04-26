@@ -14,7 +14,7 @@ tidier_taylor %>%
   select(track_name, word) %>% 
   filter(word == "love") %>% 
   unique() %>% 
-  select(track_name) %>%
+  select(track_name)
 
 # wordcloud: Midnights (3am Edition) the album
 word_count_ts <- tidier_taylor %>%

@@ -4,7 +4,7 @@ library(geniusr)
 lyrics_list <- list()
 
 # Set the maximum number of retries for a URL
-max_retries <- 10
+max_retries <- 15 # big amount, because when less, server is not always giving answer back
 
 # Iterate through each URL in the column
 for (url in taylor_lyrics$filtered_track_lyric_urls) {
@@ -57,5 +57,3 @@ genius_data <- data.frame(track_name = taylor_lyrics$filtered_track_lyric_titles
 genius_data$track_name <- as.character(genius_data$track_name)
 genius_data$lyrics <- as.character(genius_data$lyrics_list)
 
-# Save the data
-write.csv(genius_data, "./data/genius_data.csv", row.names=TRUE)

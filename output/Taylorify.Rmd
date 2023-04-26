@@ -47,7 +47,7 @@ head(spotify_genius)
 
 ## Acousticness
 
-*This value describes how acoustic a song is. A score of 1.0 means the song is most likely to be an acoustic one. I build a ridge plot roduce an overview of acousticness and check on my own assumption which album has the biggest value.*
+*This value describes how acoustic a song is. A score of 1.0 means the song is most likely to be an acoustic one. I build a ridge plot to produce an overview of acousticness and check on my own assumption which album has the biggest value.*
 ![](../figs/acousticness_ridge_plot.png)
 <font size = "4"> Folklore and Evermore, two of Taylor Swift's most popular albums, stand out for their high acousticness. This may be due to Taylor's shift towards the indie/alternative genre during the pandemic, which often uses acoustic instruments and a stripped-down sound. The albums showcase Taylor's versatility and willingness to experiment with new styles. (And they are my personally favourite albums as well) </font>
 
