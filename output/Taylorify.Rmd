@@ -7,9 +7,6 @@ output:
       toc: true
       toc_float: true
       theme: paper
-      code_folding: hide
-editor_options: 
-  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
